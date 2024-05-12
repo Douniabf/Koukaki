@@ -8,39 +8,98 @@
  Version: 0.1
  */
 
- .banner {
+
+.banner {
+	position: relative; /*pour que l'image et la vidéo soit de la même taille*/
+	background-image: url("../foce/assets/images/banner.png");
 	min-height: 806px;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	animation: opac 2s;
+	animation: video 4s;
 }
 
- @keyframes opac {
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-
- }
-
- @keyframes text {
-	0%{margin-top: -40%;}
-	100%{margin-top: -50%;}
-
- }
-
- @keyframes fond {
-	0%{margin-top: -20%;}
-	100%{margin-top: 10%;}
- }
-
-.banner img {
-	
-	animation: text 2s forwards;
+.banner video 
+{
+	position: absolute; /*pour que l'image et la vidéo soit de la même taille*/
 }
 
-.video{
-	animation: fond 2s ;
-	
+.banner img 
+{
+	position: absolute; /*pour que l'image et la vidéo soit de la même taille*/
+	animation: logo 2s forwards;
 }
+
+body{
+	animation: fondu 4s;	
+}
+
+section{
+	animation: section 2s;
+}
+
+/* la vidéo qui baisse */
+@keyframes video
+{
+	0%{
+		bottom: 400px;
+	}
+
+	100%{
+		bottom: 0px;
+	}
+}
+
+/* les sections qui montent */
+@keyframes section 
+{
+	0%{
+		top: 500px;
+	}
+
+	100%{
+		top: 0px;
+	}
+}
+
+/* le fondu de toute le page */
+@keyframes fondu 
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+/* le logo qui monte */
+@keyframes logo 
+{
+	0%
+	{
+		top: 500px;
+	}
+	100%
+	{
+		top: 200px;
+	}
+}
+
+/* pour la rotation des fleurs */
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  ::after, footer::before, #studio h2::before{
+	animation: rotation 10s linear infinite;
+  }
