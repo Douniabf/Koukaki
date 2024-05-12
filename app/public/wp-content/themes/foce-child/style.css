@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 /*
  Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
  Theme URI: https://www.koukaki.local
@@ -24,6 +26,7 @@
 .banner video 
 {
 	position: absolute; /*pour que l'image et la vidéo soit de la même taille*/
+	width: 100%;
 }
 
 .banner img 
@@ -102,4 +105,270 @@ section{
   
   ::after, footer::before, #studio h2::before{
 	animation: rotation 10s linear infinite;
+  }
+
+
+  /* section Oscars */
+
+.red_oscar
+{
+	margin-top: -100px;
+	display: flex;
+	justify-content: center;
+}
+
+.red p
+{
+	margin-top: -230px;
+	margin-left: 100px;
+	font-family: Quicksand;
+	color: white;
+	font-size: 2.5em;
+	text-shadow: 1px 1px 1px black;
+	font-weight: bold;
+	width: 590px;
+}
+
+footer 
+{
+	display: flex;
+	flex-direction: column;
+	gap: 300px;
+}
+
+/* Carousel */
+#characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+}
+
+.swiper-container {
+    width: 100%; /* Largeur initiale */
+    max-width: 1000px; /* Largeur maximale pour éviter l'étirement sur de grands écrans */
+    height: 300px; /* Hauteur de votre choix */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+}
+
+/* Media queries pour le rendu réactif */
+
+/* Pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+    #characters {
+        padding: 0 10px; /* Ajouter un peu d'espace sur les côtés */
+    }
+}
+
+/* Pour les écrans de taille moyenne */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #characters {
+        padding: 0 20px; /* Ajouter un peu plus d'espace sur les côtés */
+    }
+}
+
+/* Pour les écrans de grande taille */
+@media screen and (min-width: 1025px) {
+    #characters {
+        padding: 0 40px; /* Ajouter encore plus d'espace sur les côtés */
+    }
+}
+
+
+/* Pour les écrans de grande taille */
+@media screen and (min-width: 1025px) {
+    .swiper-container {
+        height: 300px; /* Hauteur par défaut pour les grands écrans */
+    }
+}
+  
+/* Place  */
+
+.story #place {
+	background-image: url('./images/Studio_Koukaki-image_place.png');
+}
+
+.nuage1 
+{
+	margin-top: -500px;
+	margin-left: 700px;
+	filter: blur(10px);
+}
+
+.nuage2
+{
+	margin-top: 100px;
+	margin-left: 700px;
+	filter: blur(10px);
+}
+
+
+
+/* Header  */
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pour aligner les éléments sur les bords */
+	padding-right: 20px;
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1; /* Pour pousser le texte à prendre tout l'espace restant */
+}
+
+.main-navigation div {
+    /* Styles pour positionner la div à droite */
+    margin-left: auto; /* Pour aligner la div tout à droite */
+    /* Ajoutez d'autres styles si nécessaire */
+}
+
+.cross {
+	display: none;
+}
+  
+  
+/* Menu  */
+
+.menu 
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+	display: none;
+	text-align: center;
+}
+
+.menu .logo 
+{
+	width: 150px;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.menu .background 
+{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.menu .choices 
+{
+	display: flex;
+	gap: 70px;
+	flex-direction: column;
+	position: absolute;
+	font-size: 2.7em;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-decoration: none;
+}
+
+.menu .choices a 
+{
+	text-decoration: none;
+}
+
+
+.menu .a:hover
+{
+	text-shadow: 1px 1px 20px orange;
+}
+.menu .footer 
+{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+/* Animation logo  */
+#logoo 
+{
+	animation: bouger 0.5s infinite alternate; 
+}
+
+@keyframes bouger 
+{
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}
+
+
+/* Styles de base */
+
+/* Pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+    .banner {
+        min-height: 400px;
+    }
+
+    .banner img {
+        top: 100px;
+    }
+}
+
+/* Pour les écrans de taille moyenne */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .banner {
+        min-height: 600px;
+    }
+
+    .banner img {
+        top: 150px;
+    }
+}
+
+/* Pour les écrans de grande taille */
+@media screen and (min-width: 1025px) {
+    .banner {
+        min-height: 800px;
+    }
+
+    .banner img {
+        top: 200px;
+    }
+}
+
+/* ANimation titre */
+h1, h2, h3 {
+	opacity: 0;
+	transition: transform 1s ease, opacity 1s ease;
+	
+  }
+  
+  h1.active, h2.active, h3.active {
+	opacity: 1;
+	
+  }
+  
+  @media screen and (max-width : 1024px){
+	video{
+		display: none;
+	}
+
+	
   }
