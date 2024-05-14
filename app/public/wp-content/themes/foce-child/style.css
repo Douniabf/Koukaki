@@ -167,9 +167,8 @@ footer {
 }
 
 .nuage1 {
-  margin-top: -500px;
-  margin-left: 1000px;
   filter: blur(10px);
+  float: right;
 }
 
 .nuage2 {
