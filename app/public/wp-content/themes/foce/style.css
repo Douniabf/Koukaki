@@ -755,8 +755,8 @@ textarea {
 .story h2::after {
 	content: url("./assets/images/Sunflower.png");
 	position: absolute;
-	left: 0.7em;
-	top: 6em;
+	left: 0.8em;
+	top: 9em;
 }
 
 .story__article {
@@ -843,7 +843,7 @@ textarea {
 
 #studio h2 {
 	overflow: hidden;
-	background-image: url("./assets/images/purple_studio_bg.png");
+	
 }
 
 #studio h2::before {

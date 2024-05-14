@@ -5,12 +5,19 @@ const nuage2 = document.querySelector('.nuage2');
 // Fonction pour animer les nuages
 function animerNuages() {
     // Calculer la position de chaque nuage par rapport au défilement de la page
-    const position1 = window.scrollY * -0.500;
-    const position2 = window.scrollY * -0.700;
-    console.log("nuage : "+nuage1.getBoundingClientRect().x)
-    console.log("width : "+screen.width)
+    const position1 = window.scrollY * -0.25;
+    const position2 = window.scrollY * -0.27;
 
-    if ( nuage1.getBoundingClientRect().x <  screen.width)
+    if (nuage1.getBoundingClientRect().x > screen.width)
+    {
+        nuage1.style.display = 'none';
+    }
+    else 
+    {
+        nuage1.style.display = 'block';
+    }
+
+    if (window.scrollY > 1785)
     {
         // Déplacer les nuages horizontalement
         nuage1.style.transform = `translateX(${position1}px)`;

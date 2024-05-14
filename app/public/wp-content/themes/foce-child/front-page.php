@@ -11,7 +11,18 @@ get_header();
          <img id="logoo" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
         </section>
         <section id="story" class="story">
-            <h2>L'histoire</h2>
+            <h2 class="parent-container">
+                <div class="reveal">
+                    <div class="text-container">
+                        <h5>L'</h5>
+                    </div>
+                </div>
+                <div class="reveal_vincent">
+                    <div class="text-container">
+                        <h5>histoire</h5>
+                    </div>
+                </div>
+            </h2>
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
             </article>
@@ -27,17 +38,17 @@ get_header();
             ?>
             <!-- Carousel -->
             <article id="characters">
-                <h3>
-                    <div class="container reveal">
-        <div class="text-container">
-          <h5 class="text-box">les</h5>
-        </div>
-      </div>
-      <div class="container reveal_vincent">
-        <div class="text-container">
-          <h5 class="text-box2">personnages</h5>
-        </div>
-      </div>
+                <h3 class="parent-container">
+                    <div class="reveal">
+                        <div class="text-container">
+                            <h5>Les</h5>
+                        </div>
+                    </div>
+                    <div class="container reveal_vincent">
+                        <div class="text-container">
+                         <h5>personnages</h5>
+                        </div>
+                    </div>
                 </h3>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -68,7 +79,19 @@ get_header();
             <article id="place">
                 <!-- Nuages -->
                 <div>
-                    <h3>Le Lieu</h3>
+                    <h3 class="parent-container">
+                        <div class="reveal">
+                            <div class="text-container">
+                                <h5>Le</h5>
+                            </div>
+                        </div>
+                        <div class="container reveal_vincent">
+                            <div class="text-container">
+                                 <h5>lieu</h5>
+                            </div>
+                        </div>
+
+                    </h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                     <img class="nuage1" src=".\wp-content\themes\foce-child\images\big_cloud.png">
                     <img class="nuage2" src=".\wp-content\themes\foce-child\images\little_cloud.png">
@@ -79,17 +102,18 @@ get_header();
 
 
         <section id="studio">
-            <h2>
-                <div class="container reveal">
-        <div class="text-container">
-          <h5 class="text-box">Studio</h5>
-        </div>
-      </div>
-      <div class="container reveal_vincent">
-        <div class="text-container">
-          <h5 class="text-box2">Koukaki</h5>
-        </div>
-      </div>
+            <h2 class="parent-container" >
+                <div class="reveal">
+                    <div class="text-container">
+                        <h5>Studio</h5>
+                    </div>
+                </div>
+                <div class="container reveal_vincent">
+                    <div class="text-container">
+                        <h5>Koukaki</h5>
+                    </div>
+                </div>
+
             </h2>
             <div>
                 <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue des programmes originaux dans plus de 190 pays pour les enfants et les adultes. Nous avons deux sections en activité : le long métrage et le court métrage. Nous développons des films fantastiques, principalement autour de la culture de notre pays natal, le Japon.</p>

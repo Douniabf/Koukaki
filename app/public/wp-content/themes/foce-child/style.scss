@@ -11,6 +11,8 @@
  */
 
 
+
+
 .banner {
 	position: relative; /*pour que l'image et la vidéo soit de la même taille*/
 	background-image: url("../foce/assets/images/banner.png");
@@ -20,7 +22,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	animation: video 4s;
+	animation: video 2.5s;
 }
 
 .banner video 
@@ -29,10 +31,16 @@
 	width: 100%;
 }
 
+@media screen and (max-width:1300px) {
+	video{
+		display: none;
+	}
+	
+}
+
 .banner img 
 {
 	position: absolute; /*pour que l'image et la vidéo soit de la même taille*/
-	animation: logo 2s forwards;
 }
 
 body{
@@ -85,7 +93,7 @@ section{
 {
 	0%
 	{
-		top: 500px;
+		top: 900px;
 	}
 	100%
 	{
@@ -196,14 +204,14 @@ footer
 .nuage1 
 {
 	margin-top: -500px;
-	margin-left: 700px;
+	margin-left: 1000px;
 	filter: blur(10px);
 }
 
 .nuage2
 {
 	margin-top: 100px;
-	margin-left: 700px;
+	margin-left: 900px;
 	filter: blur(10px);
 }
 
@@ -304,7 +312,8 @@ footer
 /* Animation logo  */
 #logoo 
 {
-	animation: bouger 0.5s infinite alternate; 
+	animation: logo 2s forwards, bouger 0.5s infinite alternate ; 
+	
 }
 
 @keyframes bouger 
@@ -358,32 +367,30 @@ footer
   section .container{
     margin: 10px;
   }
+
   section h1{
     font-size: 3rem;
     margin: 20px;
   }
+
   section h2{
     font-size: 40px;
     text-align: center;
-    text-transform: uppercase;
   }
+
   section .text-container{
      display: flex;
   }
-  .text-box{
-    margin: 20px;
-    padding: 20px;
-    background: #00c2cb;
+
+  .parent-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
   }
-  .text-box2{
-    margin: 20px;
-    padding: 20px;
-    background: #a0d6d9;
-  }
+
   section .text-container .text-box h3{
     font-size: 30px;
     text-align: center;
-    text-transform: uppercase;
     margin-bottom: 10px;
   }
   
@@ -398,6 +405,7 @@ footer
     transform: translateY(0);
     opacity: 1;
   }
+
   
   /* reveal_vincent est plus lent à s'afficher */
   
