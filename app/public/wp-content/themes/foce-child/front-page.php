@@ -79,10 +79,8 @@ get_header();
             <article id="place">
                 <!-- Nuages -->
                 <div class="d">
-                <div>
-                        <img class="nuage1" src=".\wp-content\themes\foce-child\images\big_cloud.png">
+                    <img class="nuage1" src=".\wp-content\themes\foce-child\images\big_cloud.png">
                     <img class="nuage2" src=".\wp-content\themes\foce-child\images\little_cloud.png">
-                </div>
                     <h3 class="parent-container">
                         <div class="reveal">
                             <div class="text-container">

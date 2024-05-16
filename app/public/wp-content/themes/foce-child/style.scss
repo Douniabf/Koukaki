@@ -31,7 +31,7 @@
 	width: 100%;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1410px) {
 	video{
 		display: none;
 	}
@@ -149,20 +149,26 @@ footer
     display: flex;
     flex-direction: column;
     align-items: center; /* Centrer les éléments horizontalement */
+	
 }
 
 .swiper-container {
     width: 100%; /* Largeur initiale */
     max-width: 1000px; /* Largeur maximale pour éviter l'étirement sur de grands écrans */
     height: 300px; /* Hauteur de votre choix */
+	
 }
 
 .swiper-slide img {
     width: 100%;
     height: auto;
     border: none;
-    outline: none;
+    outline: none;	
 }
+
+// .swiper-wrapper{
+// 	transform: none !important;
+// }
 
 /* Media queries pour le rendu réactif */
 
@@ -197,25 +203,62 @@ footer
   
 /* Place  */
 
-.story #place {
-	background-image: url('./images/Studio_Koukaki-image_place.png');
-}
+/* Place  */
 
-.nuage1 
-{
+#story #place {
+	background-image: url("./images/Studio_Koukaki-image_place.png");
+  }
+  
+  .nuage1 {
 	filter: blur(10px);
-	float: right;
-}
-
-.nuage2
-{
-	margin-top: 100px;
-	margin-left: 900px;
+	margin-left: 150%;
+	margin-top: 120px;
+  }
+  
+  .nuage2 {
 	filter: blur(10px);
-}
-
-
-
+	margin-left: 100%;
+  }
+  
+  /*responsive nuages*/
+  
+  @media screen and (max-width: 1275px)
+  {
+	.nuage1 {
+	  width: 200px;
+	  margin-left: 100%;
+	}
+	
+	.nuage2 {
+	  margin-left: 90%;
+	}
+  }
+  
+  @media screen and (max-width: 950px)
+  {
+	.nuage1 {
+	  width: 200px;
+	  margin-left: 60%;
+	}
+	
+	.nuage2 {
+	  margin-left: 40%;
+	}
+  }
+  
+  
+  @media screen and (max-width: 475px)
+  {
+	.nuage1 {
+	  width: 200px;
+	  margin-left: 50%;
+	}
+	
+	.nuage2 {
+	  margin-left: 40%;
+	}
+  }
+  
 /* Header  */
 
 .main-navigation {

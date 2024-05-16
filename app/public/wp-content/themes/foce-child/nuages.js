@@ -8,21 +8,9 @@ function animerNuages() {
     const position1 = window.scrollY * -0.25;
     const position2 = window.scrollY * -0.27;
 
-    if (nuage1.getBoundingClientRect().x > screen.width)
-    {
-        nuage1.style.display = 'none';
-    }
-    else 
-    {
-        nuage1.style.display = 'block';
-    }
-
-    if (window.scrollY > 1785)
-    {
-        // Déplacer les nuages horizontalement
-        nuage1.style.transform = `translateX(${position1}px)`;
-        nuage2.style.transform = `translateX(${position2}px)`;
-    }
+    // Déplacer les nuages horizontalement
+    nuage1.style.transform = `translateX(${position1}px)`;
+    nuage2.style.transform = `translateX(${position2}px)`;
 }
 
 // Écouter l'événement de défilement de la page et appeler la fonction d'animation
