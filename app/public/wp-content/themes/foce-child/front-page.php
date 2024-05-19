@@ -37,7 +37,8 @@ get_header();
             $characters_query = new WP_Query($args);
             ?>
             <!-- Carousel -->
-            <article id="characters">
+            <?php get_template_part( 'carousel' ); ?>
+            <!-- <article id="characters">
                 <h3 class="parent-container">
                     <div class="reveal">
                         <div class="text-container">
@@ -75,7 +76,7 @@ get_header();
                     </div>
                 </div>
                 <script src="../../wp-content/themes/foce-child/carousel.js"></script>
-            </article>
+            </article> -->
             <article id="place">
                 <!-- Nuages -->
                 <div class="d">
