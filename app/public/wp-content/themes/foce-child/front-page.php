@@ -38,45 +38,6 @@ get_header();
             ?>
             <!-- Carousel -->
             <?php get_template_part( 'partielcarousel' ); ?>
-            <!-- <article id="characters">
-                <h3 class="parent-container">
-                    <div class="reveal">
-                        <div class="text-container">
-                            <h5>Les</h5>
-                        </div>
-                    </div>
-                    <div class="container reveal_vincent">
-                        <div class="text-container">
-                         <h5>personnages</h5>
-                        </div>
-                    </div>
-                </h3>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="../../wp-content/uploads/2022/06/Jaakuna-1.png" alt="Jaakuna">
-                            <div class="swiper-slide-title">Jaakuna</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="../../wp-content/uploads/2022/06/Kawaneko.png" alt="Kawaneko">
-                            <div class="swiper-slide-title">Kawaneko</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="../../wp-content/uploads/2022/06/Orenjiiro-1.png" alt="Orenjiiro">
-                            <div class="swiper-slide-title">Orenjiiro</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="../../wp-content/uploads/2022/06/Pinku-1.png" alt="Pinku">
-                            <div class="swiper-slide-title">Pinku</div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="../../wp-content/uploads/2022/06/Tenshi-1.png" alt="Tenshi">
-                            <div class="swiper-slide-title">Tenshi</div>
-                        </div>
-                    </div>
-                </div>
-                <script src="../../wp-content/themes/foce-child/carousel.js"></script> 
-            </article> -->
             <article id="place">
                 <!-- Nuages -->
                 <div class="d">
@@ -97,7 +58,6 @@ get_header();
                     </h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                     
-                    <!-- <script src="../../wp-content/themes/foce-child/nuages.js"></script> -->
                 </div>
             </article>
         </section>
@@ -105,17 +65,16 @@ get_header();
 
         <section id="studio">
             <h2 class="parent-container" >
-                <div class="reveal">
+            <div class="reveal">
                     <div class="text-container">
                         <h5>Studio</h5>
                     </div>
                 </div>
-                <div class="container reveal_vincent">
+                <div class="reveal_vincent">
                     <div class="text-container">
                         <h5>Koukaki</h5>
                     </div>
                 </div>
-
             </h2>
             <div>
                 <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue des programmes originaux dans plus de 190 pays pour les enfants et les adultes. Nous avons deux sections en activité : le long métrage et le court métrage. Nous développons des films fantastiques, principalement autour de la culture de notre pays natal, le Japon.</p>
@@ -135,14 +94,13 @@ get_header();
             <img class="img hibiscus" src=".\wp-content\themes\foce-child\images\menu\Hibiscus footer.png" alt="Menu">
             <img class="img random" src=".\wp-content\themes\foce-child\images\menu\Random Flower.png" alt="Menu">
             <div class="choices">
-                <a class="a" href="#story">Histoire</a>
-                <a class="a" href="#characters">Personnages</a>
-                <a class="a lieu" href="#place">Lieu</a>
-                <a class="a" href="#studio">Studio Koukaki</a>
+                <a class="a" href="#story" class="parent-container">Histoire</a>
+                <a class="a" href="#characters" class="parent-container">Personnages</a>
+                <a class="a lieu" href="#place" class="parent-container">Lieu</a>
+                <a class="a" href="#studio" class="parent-container">Studio Koukaki</a>
             </div>
             <p class="footer">Studio Koukaki</p>
         </section>
-        <!-- <script src="../../wp-content/themes/foce-child/menu.js"></script> -->
        
     </main><!-- #main -->
 

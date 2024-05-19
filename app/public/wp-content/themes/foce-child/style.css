@@ -462,4 +462,18 @@ section .text-container .text-box h3 {
   opacity: 1;
 }
 
-/*code avec SASS*//*# sourceMappingURL=style.css.map */
+/*code avec SASS*//*# sourceMappingURL=style.css.map *//* Animation pour le texte qui sort du bas vers le haut */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+
+.a {
+  animation: slideInFromBottom 2s ease-in-out forwards;
+}
