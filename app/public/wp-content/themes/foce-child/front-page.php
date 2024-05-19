@@ -125,8 +125,15 @@ get_header();
         <!-- section.php -->
 
         <section class="menu">
-            <img class="background" src=".\wp-content\themes\foce-child\images\back.png" alt="Menu">
             <img class="logo" src=".\wp-content\themes\foce-child\images\logo.png" alt="Menu">
+            <img class="img cat-1" src=".\wp-content\themes\foce-child\images\menu\cat-1.png" alt="Menu">
+            <img class="img cat" src=".\wp-content\themes\foce-child\images\menu\cat.png" alt="Menu">
+            <img class="img flower" src=".\wp-content\themes\foce-child\images\menu\Flower.png" alt="Menu">
+            <img class="img group" src=".\wp-content\themes\foce-child\images\menu\Group 180.png" alt="Menu">
+            <img class="img orchid" src=".\wp-content\themes\foce-child\images\menu\Orchid.png" alt="Menu">
+            <img class="img sunflower" src=".\wp-content\themes\foce-child\images\menu\Sunflower.png" alt="Menu">
+            <img class="img hibiscus" src=".\wp-content\themes\foce-child\images\menu\Hibiscus footer.png" alt="Menu">
+            <img class="img random" src=".\wp-content\themes\foce-child\images\menu\Random Flower.png" alt="Menu">
             <div class="choices">
                 <a class="a" href="#story">Histoire</a>
                 <a class="a" href="#characters">Personnages</a>
