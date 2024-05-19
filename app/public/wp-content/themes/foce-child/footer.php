@@ -30,6 +30,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script src="../../wp-content/themes/foce-child/titleanimation.js"></script>
+<!-- <script src="../../wp-content/themes/foce-child/titleanimation.js"></script> -->
 </body>
 </html>

@@ -37,7 +37,7 @@ get_header();
             $characters_query = new WP_Query($args);
             ?>
             <!-- Carousel -->
-            <?php get_template_part( 'carousel' ); ?>
+            <?php get_template_part( 'partielcarousel' ); ?>
             <!-- <article id="characters">
                 <h3 class="parent-container">
                     <div class="reveal">
@@ -75,7 +75,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <script src="../../wp-content/themes/foce-child/carousel.js"></script>
+                <script src="../../wp-content/themes/foce-child/carousel.js"></script> 
             </article> -->
             <article id="place">
                 <!-- Nuages -->
@@ -97,7 +97,7 @@ get_header();
                     </h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                     
-                    <script src="../../wp-content/themes/foce-child/nuages.js"></script>
+                    <!-- <script src="../../wp-content/themes/foce-child/nuages.js"></script> -->
                 </div>
             </article>
         </section>
@@ -135,7 +135,7 @@ get_header();
             </div>
             <p class="footer">Studio Koukaki</p>
         </section>
-        <script src="../../wp-content/themes/foce-child/menu.js"></script>
+        <!-- <script src="../../wp-content/themes/foce-child/menu.js"></script> -->
        
     </main><!-- #main -->
 

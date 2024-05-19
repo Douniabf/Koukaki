@@ -8,3 +8,71 @@
 [07-May-2024 21:12:52 UTC] PHP Warning:  include(): Failed opening '../foce-child/partial/section.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 71
 [07-May-2024 21:13:10 UTC] PHP Warning:  include(./partial/section.php): Failed to open stream: No such file or directory in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 71
 [07-May-2024 21:13:10 UTC] PHP Warning:  include(): Failed opening './partial/section.php' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php on line 71
+[19-May-2024 16:37:16 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 38
+[19-May-2024 16:37:19 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 38
+[19-May-2024 16:38:22 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 35
+[19-May-2024 16:38:25 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 35
+[19-May-2024 16:38:29 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 35
+[19-May-2024 16:39:14 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 35
+[19-May-2024 16:39:14 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 35
+[19-May-2024 16:39:16 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 35
+[19-May-2024 16:39:16 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 35
+[19-May-2024 16:39:32 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 52
+[19-May-2024 16:39:32 UTC] PHP Fatal error:  Cannot redeclare mon_theme_enqueue_scripts() (previously declared in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:21) in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 52
+[19-May-2024 16:40:00 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "mon_theme_enqueue_scripts" not found or invalid function name in C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\script-loader.php(2265): do_action('wp_enqueue_scri...')
+#3 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#4 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\general-template.php(3050): do_action('wp_head')
+#7 C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\header.php(27): wp_head()
+#8 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\template.php(810): require_once('C:\\Users\\33679\\...')
+#9 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\template.php(745): load_template('C:\\Users\\33679\\...', true, Array)
+#10 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php(3): get_header()
+#12 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\33679\\...')
+#13 C:\Users\33679\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\33679\\...')
+#14 C:\Users\33679\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\33679\\...')
+#15 {main}
+  thrown in C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php on line 324
+[19-May-2024 16:59:02 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "mon_theme_enqueue_scripts" not found or invalid function name in C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\script-loader.php(2265): do_action('wp_enqueue_scri...')
+#3 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#4 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\general-template.php(3050): do_action('wp_head')
+#7 C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\header.php(27): wp_head()
+#8 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\template.php(810): require_once('C:\\Users\\33679\\...')
+#9 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\template.php(745): load_template('C:\\Users\\33679\\...', true, Array)
+#10 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php(3): get_header()
+#12 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\33679\\...')
+#13 C:\Users\33679\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\33679\\...')
+#14 C:\Users\33679\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\33679\\...')
+#15 {main}
+  thrown in C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php on line 324
+[19-May-2024 17:35:10 UTC] PHP Parse error:  Unclosed '{' on line 3 in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 32
+[19-May-2024 17:35:10 UTC] PHP Parse error:  Unclosed '{' on line 3 in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 32
+[19-May-2024 17:44:10 UTC] PHP Warning:  Undefined variable $characters_query in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\partielcarousel.php on line 46
+[19-May-2024 17:44:10 UTC] PHP Warning:  Attempt to read property "posts" on null in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\partielcarousel.php on line 46
+[19-May-2024 17:44:10 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\partielcarousel.php on line 46
+[19-May-2024 17:44:10 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\partielcarousel.php on line 48
+[19-May-2024 17:44:10 UTC] PHP Warning:  Attempt to read property "post_title" on null in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\partielcarousel.php on line 49
+[19-May-2024 17:44:10 UTC] PHP Warning:  Undefined variable $characters_query in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\partielcarousel.php on line 51
+[19-May-2024 17:44:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\partielcarousel.php:51
+Stack trace:
+#0 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\template.php(812): require()
+#1 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\template.php(745): load_template('C:\\Users\\33679\\...', false, Array)
+#2 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php(40): get_template_part('partielcarousel')
+#4 C:\Users\33679\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\33679\\...')
+#5 C:\Users\33679\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\33679\\...')
+#6 C:\Users\33679\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\33679\\...')
+#7 {main}
+  thrown in C:\Users\33679\Local Sites\koukaki\app\public\wp-content\themes\foce-child\partielcarousel.php on line 51
